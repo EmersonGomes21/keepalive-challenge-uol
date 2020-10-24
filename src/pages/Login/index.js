@@ -41,7 +41,6 @@ const Login = () => {
             <main>
               <section className="usuario">
                 <input
-                  type="text"
                   name="usúario"
                   placeholder="Usúario"
                   onChange={onChange}

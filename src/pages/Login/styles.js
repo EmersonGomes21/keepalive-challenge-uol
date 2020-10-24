@@ -7,6 +7,7 @@ export const Container = styled.div`
   height: 100%;
   font-family: 'Mark Pro';
   background: ${(props) => props.theme.colors.background};
+  box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
 `;
 
 export const Left = styled.div`
@@ -31,6 +32,19 @@ export const ContainerTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: initial;
+
+  >h1{
+
+width: 118px;
+height: 76px;
+font-family: Mark Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 60px;
+line-height: 76px;
+color: ${props => props.theme.primary};
+
+  }
   > h4 {
     max-width: 300px;
     height: 52px;
@@ -43,8 +57,6 @@ export const ContainerTitle = styled.div`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
-  color: var(--color-secondary);
 
   > main {
     display: flex;
@@ -54,7 +66,7 @@ export const Form = styled.form`
   > h1 {
     width: 81px;
     height: 38px;
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 400;
     line-height: 20px;
     font-family: 'Mark Pro';
@@ -67,20 +79,25 @@ export const Form = styled.form`
     margin-bottom: 33px;
   }
 
-  > main section img {
+  > main section.usuario img{
     width: 20px;
     height: 20px;
+  }
+
+  main section.senha img {
+    width: 20px;
+    height: 25px;
   }
 
   > main section input {
     width: 379px;
     height: 60px;
     border-radius: 50px;
-    background-color: var(--color-background-login);
-    color: var(--color-background-login);
-    padding: 10px;
-    border: 1px solid #ffffff;
-    outline: none;
+    color: ${props => props.theme.background};
+    padding: 20px;
+    border: 1px solid ${props => props.theme.white};
+    outline: 0;
+    background: none;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;

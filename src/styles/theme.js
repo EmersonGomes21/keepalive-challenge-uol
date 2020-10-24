@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 
 const theme = {
   colors: {
+    white:'linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%)',
     primary: '#e0e0e0',
     error: '#e9b425',
     button: 'linear-gradient(90deg, #ff2d04 0%, #c13216 100%)',

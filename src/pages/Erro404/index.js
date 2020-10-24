@@ -17,9 +17,10 @@ import icon3 from '../../assets/images/404/image-5-mobile.png'
 const Erro404 = () => {
   return (
     <>
-      <Header404 />
+      
 
       <Container>
+      <Header404 />
 
         <Content>
 
