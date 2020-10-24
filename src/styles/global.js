@@ -31,7 +31,7 @@ export default createGlobalStyle`
     font: 14px 'Mark Pro', sans-serif;
   }
 
-  a {
+  a{
     text-decoration: none;
     cursor: pointer;
   }
@@ -55,6 +55,7 @@ export default createGlobalStyle`
     height: 100%;
     background: ${(props) => props.theme.colors.background}
   }
+
 
   .col {
     display: flex;
@@ -134,7 +135,6 @@ export default createGlobalStyle`
       height: 67px;
       border-radius: 50px;
       margin-top: 115px;
-
       font-size: 18px;
       font-weight: bold;
       background: ${(props) => props.theme.colors.button};

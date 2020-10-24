@@ -8,7 +8,7 @@ import Erro404 from './Erro404';
 const PagesRoot = () => (
   <Router>
     <Switch>
-      <Route path="/" exact component={Home} />
+      <Route path="/home" exact component={Home}/>
       <Route path="/login" component={Login} />
       <Route path="/login2" component={Login2} />
       <Route path="/" component={Erro404} />

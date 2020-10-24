@@ -8,12 +8,12 @@ function Header404() {
       <img src={LogoCompasso} alt="logo" />
 
       <ContainerRight>
-        <a>Transformação</a>
-        <a>Plataformas</a>
-        <a>Culturas</a>
-        <a>Talentos</a>
-        <a>Vamos Conversar?</a>
-        <a>Português</a>
+        <a href ="#">Transformação</a>
+        <a href ="#">Plataformas</a>
+        <a href ="#">Culturas</a>
+        <a href ="#">Talentos</a>
+        <a href ="#">Vamos Conversar?</a>
+        <a href ="#">Português</a>
       </ContainerRight>
 
     </Container>

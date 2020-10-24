@@ -27,11 +27,11 @@ function Footer() {
 
         <ContainerButtons>
           <ButtonNavegation>
-           <a>Continuar Navegando</a>
+           <a href="/">Continuar Navegando</a>
            </ButtonNavegation>
 
           <ButtonLogout>
-           <a>Logout</a>
+           <a href="/login">Logout</a>
            </ButtonLogout>
 
         </ContainerButtons>

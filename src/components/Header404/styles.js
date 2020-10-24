@@ -26,23 +26,22 @@ height: 70%;
 margin-right: 41px;
 margin-top: 5px;
 
- >a{
+ > a{
 font-family:  Mark Pro;
 font-style: normal;
 font-weight: bold;
 font-size: 18px;
 line-height: 18px;
 margin-bottom: 17px;
-color: white;
-cursor: pointer;
 margin-left: 44px;
+cursor: pointer;
+}
+> a:hover{
+  cursor: pointer;
+  
 }
 
 `;
 
-export const LocationTemperature = styled.div`
-
-
-`;
 
 

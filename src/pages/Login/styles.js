@@ -3,25 +3,25 @@ import LogoCompasso from '../../assets/images/image3.png';
 
 export const Container = styled.div`
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  flex: 1;
+  height: 100%;
   font-family: 'Mark Pro';
   background: ${(props) => props.theme.colors.background};
 `;
 
 export const Left = styled.div`
   display: flex;
-  justify-content: center;
+  flex: 1;
   align-items: center;
-  width: 50%;
-  margin-right: 0;
-  margin-left: 0;
+  justify-content: center;
+ 
+
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
- 
+  justify-content: space-around;
   height: 100%;
 `;
 
@@ -31,7 +31,6 @@ export const ContainerTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: initial;
-  margin-top: 80px;
   > h4 {
     max-width: 300px;
     height: 52px;
@@ -96,11 +95,13 @@ export const Form = styled.form`
     margin-top: 70px;
     font-weight: 700;
     font-size: 18px;
+    background: ${(props) => props.theme.colors.button};
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+
   }
 `;
 
 export const RightSide = styled.div`
-  background-color: red;
   display: flex;
   width: 50%;
   height: 100%;
@@ -113,7 +114,6 @@ export const Background = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-
   > img {
     margin-top: 35px;
     width: 306px;
