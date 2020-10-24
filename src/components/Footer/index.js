@@ -11,8 +11,6 @@ function Footer() {
 
       <Line></Line>
 
-
-
       <RightSide>
 
         <ContainerRight>
