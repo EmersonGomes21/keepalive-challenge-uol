@@ -15,7 +15,7 @@
   <img alt="GitHub-clone" src="https://github.com/EmersonGomes21/repositorios-readmes/blob/master/github-clone/github-clone-.gif" width="100%">
 </p>
 
-## : Tecnologias
+## :rocket: Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
