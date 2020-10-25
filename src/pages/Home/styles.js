@@ -3,17 +3,19 @@ import BolaLogoCompasso from '../../assets/images/home/bola-LogoCompasso1.svg';
 
 export const Container = styled.div`
 width: 100%;
-height: 100%;
+max-width: 1920;
+max-height: 1080px;
 background-color: ${props => props.theme.colors.white};
 `;
 
 export const Content = styled.div`
 display: flex;
 width: 100%;
-height: calc(100% + 200px);
+height:100%;
 `;
 
 export const LeftSide = styled.div`
+margin-top: 60px;
 display: flex;
 position: relative;
 width: 825px;
