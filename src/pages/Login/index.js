@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import userIcon from '~/assets/images/iconUser.svg';
 import passwordIcon from '~/assets/images/icon-password.svg';
 import logoCompasso from '~/assets/images/Logo-Compasso-Branco-hor-1.svg';
-import { Redirect, useHistory, useLocation } from 'react-router-dom';
+import {  useHistory } from 'react-router-dom';
 const Login = () => {
-  const [redirect, setRedirect] = useState(false);
+
   const [isConected, setIsConected] = useState(false);
   const [error, setError] = useState(false);
   const [users] = useState([
@@ -16,15 +16,16 @@ const Login = () => {
 
   const [inputUsuario, setInputUsuario] = useState('');
   const [inputSenha, setInputSenha] = useState('');
+
   let history = useHistory();
-  let location = useLocation();
+
   const submit = () => {
     const isAuthenticated = users.some(data => data.user === inputUsuario && data.password === inputSenha);
 
     if (isAuthenticated) {
       setError(false);
       setIsConected(true);
-
+      localStorage.setItem('@keepalive/connected', true);
       setTimeout(() => {
         history.push('/home/');
       }, (1000 * 4));
@@ -36,10 +37,7 @@ const Login = () => {
 
   }
 
-  return (
-
-
-    
+  return (    
     <div className="container">
       <div className="col">
         <div className="content">
@@ -74,7 +72,7 @@ const Login = () => {
               )}
 
               {
-              
+
                isConected  && (
                 <p className="text-success">
                   Login efetuado com sucesso. <br />

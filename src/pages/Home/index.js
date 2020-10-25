@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../../components/Header';
-import DateTime from '../../components/DateTime';
-import BolaLogo from '../../assets/images/home/bola-LogoCompasso1.svg';
-import H1 from '../../components/TitlesRightSide';
+import Header from '~/components/Header';
+import DateTime from '~/components/DateTime';
+import BolaLogo from '~/assets/images/home/bola-LogoCompasso1.svg';
+import H1 from '~/components/TitlesRightSide';
 import {
   Container,
   Content,
@@ -11,7 +11,8 @@ import {
   CointainerTexts
 
 } from './styles';
-import Footer from '../../components/Footer';
+import Footer from '~/components/Footer';
+
 
 const Home = () => {
   const [titles, setTitles] = useState([]);
@@ -41,6 +42,8 @@ const Home = () => {
     );
 
   }, [titles])
+
+ 
   return (
     <>
       <Container>
