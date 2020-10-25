@@ -34,10 +34,7 @@ const Login = () => {
       setError(true);
     }
 
-
   }
-
-
 
   return (
 
@@ -59,7 +56,7 @@ const Login = () => {
             <form>
               <div className="input-container">
                 <div className={`input-group ${error === true ? 'error' : ''}`}>
-                  <input type="text" placeholder="Usuário" onChange={e => setInputUsuario(e.target.value)} />
+                  <input type="email" placeholder="Usuário" onChange={e => setInputUsuario(e.target.value)} />
                   <img src={userIcon} alt="User icon" />
                 </div>
 
