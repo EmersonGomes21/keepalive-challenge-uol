@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import { useHistory } from 'react-router-dom';
+import isConnected from '~/utils/isConnected';
 import {
   Container,
   Content,
@@ -19,8 +20,11 @@ const Erro404 = () => {
 
   useEffect(() => {
 
-   const time =  setTimeout(() => {
-      history.push('/home/');
+   setTimeout(() => {
+    isConnected ? history.push('/home/')
+    : 
+    history.push('/login/')
+
     }, (1000 * 10));
 
     return () => clearTimeout();
