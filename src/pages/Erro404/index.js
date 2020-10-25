@@ -21,9 +21,9 @@ const Erro404 = () => {
   useEffect(() => {
 
    setTimeout(() => {
-    isConnected ? history.push('/home/')
+    isConnected ? history.push('/home')
     : 
-    history.push('/login/')
+    history.push('/login')
 
     }, (1000 * 10));
 

@@ -30,7 +30,10 @@ const Login = () => {
 
       localStorage.setItem('@keepalive/connected', true);
       setTimeout(() => {
-        history.push('/home/'); 
+        isConnected ? history.push('/home')
+       : 
+        history.push('/login')
+        
       }, (1000 * 3)); // = 3s
      
     }

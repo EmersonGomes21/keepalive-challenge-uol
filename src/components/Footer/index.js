@@ -17,7 +17,7 @@ function Footer() {
  }
 
  finally {
-  history.push('/login/');
+  history.push('/login');
  }
 
   }
