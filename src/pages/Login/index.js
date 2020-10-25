@@ -1,77 +1,111 @@
-import React, { useState } from 'react';
-import IconUser from '../../assets/images/iconUser.svg';
-import IconPassword from '../../assets/images/icon-password.svg';
-import LogoCompasso from '../../assets/images/Logo-Compasso-Branco-hor-1.svg';
-import {
-  Container,
-  Left,
-  RightSide,
-  ContainerTitle,
-  Form,
-  Background,
-  Content,
-} from './styles';
-
-function initialState() {
-  return { user: '', password: '' };
-}
-
+import React, { useState, useEffect } from 'react';
+import userIcon from '~/assets/images/iconUser.svg';
+import passwordIcon from '~/assets/images/icon-password.svg';
+import logoCompasso from '~/assets/images/Logo-Compasso-Branco-hor-1.svg';
+import { Redirect, useHistory, useLocation } from 'react-router-dom';
 const Login = () => {
-  const [values, setValues] = useState(initialState);
+  const [redirect, setRedirect] = useState(false);
+  const [isConected, setIsConected] = useState(false);
+  const [error, setError] = useState(false);
+  const [users] = useState([
+    { id: 1, user: 'email.usuario@compasso.com.br', password: 'keepalive' },
+    { id: 2, user: 'emersongr7@gmail.com', password: 'emerson' },
+    { id: 3, user: 'juliana.nakagawa@compasso.com.br', password: 'juliana' },
+    { id: 4, user: 'juliana@', password: '123' },
+  ]);
 
-  function onChange(event) {
-    const { value, name } = event.target;
-    setValues({
-      /** ...values, */
-      [name]: value,
-    });
+  const [inputUsuario, setInputUsuario] = useState('');
+  const [inputSenha, setInputSenha] = useState('');
+  let history = useHistory();
+  let location = useLocation();
+  const submit = () => {
+    const isAuthenticated = users.some(data => data.user === inputUsuario && data.password === inputSenha);
+
+    if (isAuthenticated) {
+      setError(false);
+      setIsConected(true);
+
+      setTimeout(() => {
+        history.push('/home/');
+      }, (1000 * 4));
+     
+    }
+    else {
+      setError(true);
+    }
+
+
   }
+
+
+
   return (
-    <Container>
-      <Left>
-        <Content>
-          <ContainerTitle>
-            <h1>Olá,</h1>
-            <h4>
-              Para continuar navegando de forma segura, efetue o login na rede.
-            </h4>
-          </ContainerTitle>
-          <Form>
-            <h1>Login</h1>
-            <main>
-              <section className="usuario">
-                <input
-                  name="usúario"
-                  placeholder="Usúario"
-                  onChange={onChange}
-                  value={values.user}
-                />
-                <img src={IconUser} alt="icon user" />
-              </section>
 
-              <section className="senha">
-                <input
-                  type="password"
-                  name="senha"
-                  placeholder="Senha"
-                  onChange={onChange}
-                  value={values.password}
-                />
-                <img src={IconPassword} alt="icon user" />
-              </section>
 
-              <button type="button">Continuar</button>
-            </main>
-          </Form>
-        </Content>
-      </Left>
-      <RightSide>
-        <Background>
-          <img src={LogoCompasso} alt="background" />
-        </Background>
-      </RightSide>
-    </Container>
-  );
-};
+    
+    <div className="container">
+      <div className="col">
+        <div className="content">
+          <div className="heading-container">
+            <p className="heading-title">Olá,</p>
+            <p>
+              Para continuar navegando de forma
+              <br /> segura, efetue o login na rede.
+            </p>
+          </div>
+
+          <div className="form-container">
+            <h1 className="title">Login</h1>
+            <form>
+              <div className="input-container">
+                <div className={`input-group ${error === true ? 'error' : ''}`}>
+                  <input type="text" placeholder="Usuário" onChange={e => setInputUsuario(e.target.value)} />
+                  <img src={userIcon} alt="User icon" />
+                </div>
+
+                <div className={`input-group ${error === true ? 'error' : ''}`}>
+                  <input type="password" placeholder="Senha" onChange={e => setInputSenha(e.target.value)} />
+                  <img src={passwordIcon} alt="User icon" />
+                </div>
+              </div>
+
+              {error === true && (
+                <p className="text-error">
+                  Ops, usuário ou senha inválidos. <br />
+                  Tente novamente!
+                </p>
+              )}
+
+              {
+              
+               isConected  && (
+                <p className="text-success">
+                  Login efetuado com sucesso. <br />
+                  Aguarde o redirecionamento!
+                </p>
+              )
+
+              }
+
+              <button onClick={submit} type="button" className="btn-primary">
+                Continuar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div className="col background-login">
+        <img src={logoCompasso} alt="logo compasso" />
+      </div>
+    </div>  
+
+
+
+
+)
+
+ 
+}
 
 export default Login;

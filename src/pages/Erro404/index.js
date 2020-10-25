@@ -1,8 +1,8 @@
-import React from 'react';
-
+import React, {useEffect} from 'react';
+import { useHistory } from 'react-router-dom';
 import {
   Container,
-  Content, 
+  Content,
   ContainerWarning,
   ContainerIcons,
   IconsLeft,
@@ -15,12 +15,23 @@ import icon2 from '../../assets/images/404/image-2-mobile.png';
 import icon3 from '../../assets/images/404/image-5-mobile.png'
 
 const Erro404 = () => {
+  let history = useHistory();
+
+  useEffect(() => {
+
+   const time =  setTimeout(() => {
+      history.push('/home/');
+    }, (1000 * 10));
+
+    return () => clearTimeout();
+
+  }, [])
   return (
     <>
-      
+
 
       <Container>
-      <Header404 />
+        <Header404 />
 
         <Content>
 
@@ -31,11 +42,11 @@ const Erro404 = () => {
           </ContainerWarning>
 
           <ContainerIcons>
-           <div className="icon">
+            <div className="icon">
 
-            <img src={icon1} alt="icon" />
+              <img src={icon1} alt="icon" />
 
-           </div>
+            </div>
 
             <IconsLeft>
               <img src={icon1} alt="icon" />

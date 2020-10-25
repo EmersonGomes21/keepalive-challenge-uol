@@ -4,8 +4,7 @@ import BolaLogoCompasso from '../../assets/images/home/bola-LogoCompasso1.svg';
 export const Container = styled.div`
 width: 100%;
 height: 100%;
-background-color: ${props => props.theme.white};
-
+background-color: ${props => props.theme.colors.white};
 `;
 
 export const Content = styled.div`

@@ -130,6 +130,16 @@ export default createGlobalStyle`
       color: ${(props) => props.theme.colors.error}
     }
 
+    .text-success {
+      width: 100%;
+      margin-top: 28px;
+      position: absolute;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: ${(props) => props.theme.colors.success}
+    }
+
     button {
       width: 379px;
       height: 67px;
