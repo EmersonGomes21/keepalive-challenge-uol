@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import userIcon from '~/assets/images/iconUser.svg';
 import passwordIcon from '~/assets/images/icon-password.svg';
 import logoCompasso from '~/assets/images/Logo-Compasso-Branco-hor-1.svg';
-import {  useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import isConnected from '~/utils/isConnected';
 const Login = () => {
 
   const [isConected, setIsConected] = useState(false);
@@ -24,20 +25,18 @@ const Login = () => {
 
     if (isAuthenticated) {
       setError(false);
-      setIsConected(true);
       localStorage.setItem('@keepalive/connected', true);
       setTimeout(() => {
         history.push('/home/');
-      }, (1000 * 4));
-     
+      }, (1000 * 3)); // = 3s
+
     }
     else {
       setError(true);
     }
-
   }
 
-  return (    
+  return (
     <div className="container">
       <div className="col">
         <div className="content">
@@ -73,12 +72,12 @@ const Login = () => {
 
               {
 
-               isConected  && (
-                <p className="text-success">
-                  Login efetuado com sucesso. <br />
+                isConnected && (
+                  <p className="text-success">
+                    Login efetuado com sucesso. <br />
                   Aguarde o redirecionamento!
-                </p>
-              )
+                  </p>
+                )
 
               }
 
@@ -93,14 +92,14 @@ const Login = () => {
       <div className="col background-login">
         <img src={logoCompasso} alt="logo compasso" />
       </div>
-    </div>  
+    </div>
 
 
 
 
-)
+  )
 
- 
+
 }
 
 export default Login;

@@ -1,8 +1,26 @@
 import React from 'react';
-
+import {  useHistory } from 'react-router-dom';
 import { Container, LeftSide, RightSide, Line, ContainerCount, ContainerRight, ContainerButtons, ButtonNavegation, ButtonLogout } from './styles';
-
+import { Link}from 'react-router-dom';
 function Footer() {
+  let history = useHistory();
+
+  const Logout = () =>{
+
+  try {
+    localStorage.removeItem('@keepalive/connected');
+    
+   
+ }
+ catch{
+  alert('Erro ao tentar fazer logout, tente novamente!')
+ }
+
+ finally {
+  history.push('/login/');
+ }
+
+  }
   return (
     <Container > 
       <LeftSide>
@@ -25,11 +43,11 @@ function Footer() {
 
         <ContainerButtons>
           <ButtonNavegation>
-           <a href="/home/">Continuar Navegando</a>
+           <Link href="#">Continuar Navegando</Link>
            </ButtonNavegation>
 
           <ButtonLogout>
-           <a href="/login/">Logout</a>
+           <Link  onClick={Logout}>Logout</Link>
            </ButtonLogout>
 
         </ContainerButtons>
