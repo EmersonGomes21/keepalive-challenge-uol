@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-
 import Myfont from '~/assets/fonts/markpro.ttf';
 import backgroundLogin from '~/assets/images/image3.png';
 
@@ -29,6 +28,7 @@ export default createGlobalStyle`
 
   body, input, button {
     font: 14px 'Mark Pro', sans-serif;
+    font-size: 62%;
   }
 
   a{
@@ -113,6 +113,25 @@ export default createGlobalStyle`
 
       img {
         width: 20px;
+        transform: translateX(55px);
+        transition: 0.2s all;
+      }
+    }
+
+
+    .focado{
+
+      img{
+
+        transform: translateX(0)
+      }
+    }
+
+    .desfocado{
+      img{
+        
+        transform: translateX(55px);
+
       }
     }
 
@@ -162,3 +181,5 @@ export default createGlobalStyle`
     }
   }
 `;
+
+
