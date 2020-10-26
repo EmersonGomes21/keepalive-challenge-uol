@@ -53,11 +53,11 @@ export default createGlobalStyle`
     display: flex;
     width: 100%;
     height: 100%;
+    margin: 0;
     background: ${(props) => props.theme.colors.background};
     
     @media screen and (max-width: 700px){
     background: none; 
-     margin: auto;
      width: 100%;
      background-image: url(${backgroundLogin});
     
@@ -72,11 +72,12 @@ export default createGlobalStyle`
     display: flex;
     flex: 1;
     align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 50%;
  
-
     @media screen and (max-width: 750px){
       height: 100%;
-
        justify-content: space-around;
       }
     
@@ -84,29 +85,41 @@ export default createGlobalStyle`
 
   .content {
     display: flex;
-    height: 100%;
+    height: 78%;
     flex-direction: column;
+    justify-content: space-around ;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 100px;
+    background: gold;
+
+    @media screen and (max-width: 750px){
+        
+        margin-top: 32px;
+        }
   
   }
 
   .heading-title {
-    font-weight: 400;
+    font-weight: 60px;
     font-size: 60px;
+    font-weight: 20px;
+
    
   }
 
   .heading-subtitle {
     font-size: 16px;
     line-height: 20px;
+    font-weight: 20px;
    
   }
 
   .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin: auto;
     position: relative;
-    
     height: 90%;
 
     
@@ -222,7 +235,8 @@ export default createGlobalStyle`
     flex-direction: row;
     background-image: url(${backgroundLogin});
     background-repeat: no-repeat;
-    width: 100%;
+    width:100%;
+    max-width: 1920px;
     
     
     img {
