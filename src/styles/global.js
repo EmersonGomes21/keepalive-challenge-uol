@@ -142,6 +142,7 @@ export default createGlobalStyle`
       background: transparent;
       border: 1px solid ${(props) => props.theme.colors.primary};
       padding: 20px;
+      overflow: hidden;
 
       @media screen and (max-width: 750px){
         margin: auto;
@@ -198,7 +199,7 @@ export default createGlobalStyle`
       text-align: center;
       font-size: 16px;
       font-weight: bold;
-      
+
       color: ${(props) => props.theme.colors.error}
     }
 

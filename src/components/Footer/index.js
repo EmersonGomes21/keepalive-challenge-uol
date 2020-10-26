@@ -32,7 +32,7 @@ function Footer() {
 
         <ContainerButtons>
           <ButtonNavegation>
-           <Link href="#">Continuar Navegando</Link>
+           <Link to="/home">Continuar Navegando</Link>
            </ButtonNavegation>
 
           <ButtonLogout>
