@@ -31,9 +31,9 @@ export default createGlobalStyle`
    
   }
 
-  a{
+  a, #id, Link{
     text-decoration: none;
-    cursor: pointer;
+      cursor: pointer;
   }
 
   li {
@@ -142,7 +142,7 @@ export default createGlobalStyle`
       background: transparent;
       border: 1px solid ${(props) => props.theme.colors.primary};
       padding: 20px;
-      overflow: hidden;
+      outline:none;
 
       @media screen and (max-width: 750px){
         margin: auto;

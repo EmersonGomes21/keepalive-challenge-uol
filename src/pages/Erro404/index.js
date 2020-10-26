@@ -8,6 +8,8 @@ import {
   ContainerIcons,
   IconsLeft,
   IconsRight
+  ,
+  ImageBackground
 } from './styles';
 import Header404 from '~/components/Header404';
 import Footer from '~/components/Footer';
@@ -20,24 +22,29 @@ const Erro404 = () => {
 
   useEffect(() => {
 
-   setTimeout(() => {
+   {/**setTimeout(() => {
     isConnected ? history.push('/home')
     : 
     history.push('/login')
 
     }, (1000 * 10));
 
-    return () => clearTimeout();
+    return () => clearTimeout(); */}
 
   }, [])
   return (
     <>
 
-     <Header404 />
+<       Header404 />
       <Container>
-        
+     
+       <ImageBackground>
+
+       </ImageBackground>
 
         <Content>
+
+        
 
           <ContainerWarning>
             <h1>Hey! Como você veio parar aqui?</h1>

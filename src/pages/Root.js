@@ -10,12 +10,11 @@ const PagesRoot = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={Login}/>
-        <Route path="/home/"  exact component={ Home} isPrivate/>
-        <Route path="/home" exact component={ Home} isPrivate/>
-        <Route path="/login" exact  component={Login}/>
-        <Route path="/login/" exact  component={Login}/>
-        <Route path="/"  component={Erro404}/>         
+        <Route path="/" exact component={Login}/>     
+        <Route path="/home"  component={ Home} isPrivate/>
+        <Route path="/login"   component={Login}/>
+        <Route path="/erro"   component={Erro404}/>  
+        <Route path="/"  component={Erro404}/>        
       </Switch>
     </Router>
   );

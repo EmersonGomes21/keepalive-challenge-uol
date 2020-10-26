@@ -10,15 +10,24 @@ background-color: #212121;
 
 export const Content = styled.div`
 display: flex;
-position: relative;
 justify-content: center;
 align-items: center;
 width: 100%;
-height: 1000px;
-top: -150px;
+height: 80%;
+background: none;
+`;
+
+export const ImageBackground = styled.div`
+display: flex;
+position: absolute;
+width: 100%;
+height: 85%;
 background-image: url('https://compasso.com.br/wp-content/themes/compassouol/public/images/TexturaMapa-Desktop.png');
-background-repeat: none;
-color: white;
+background-repeat: space;
+background-position: center;
+
+
+
   
 `;
 
@@ -29,7 +38,7 @@ text-align: left;
 width: 50%;
 height: 20%;
 margin-left: 5%;
-color: white;
+
 
 > h1{
  max-width: 600px;
@@ -56,7 +65,7 @@ display: flex;
 position: relative;
 width: 50%;
 height: 40%;
-margin-right: 150px;
+margin: auto;
 > .icon{
   width: 150px;
   height: 300px;
@@ -82,7 +91,7 @@ display: flex;
 flex-direction: column;
 width: 250px;
 height: 290px;
-margin-top: 100px;
+
 
 >img{
   position: relative;
