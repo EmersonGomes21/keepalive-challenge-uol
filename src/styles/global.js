@@ -198,6 +198,7 @@ export default createGlobalStyle`
       text-align: center;
       font-size: 16px;
       font-weight: bold;
+      
       color: ${(props) => props.theme.colors.error}
     }
 

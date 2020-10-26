@@ -81,7 +81,7 @@ const Login = () => {
             <h1 className="title">Login</h1>
             <form>
               <div className="input-container">
-                <div className={`input-group ${erroUser ? 'error' : ''} ${userClassFocus}`}>
+                <div className={`input-group ${error ? 'error' : ''} ${userClassFocus}`}>
                   <input
                     type="email"
                     value={user}
@@ -96,7 +96,7 @@ const Login = () => {
                   <img src={userIcon} alt="User icon" />
                 </div>
 
-                <div className={`input-group ${erroPassword ? 'error' : ''} ${passwordClassFocus}`}>
+                <div className={`input-group ${error ? 'error' : ''} ${passwordClassFocus}`}>
                   <input
                     type="password"
                     value={password}
