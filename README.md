@@ -17,7 +17,7 @@
 
 ## :rocket: Tecnologias
 
-#### Esse projeto foi desenvolvido com as seguintes tecnologias:
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React e Hooks (useEffect, useState, Context)](https://reactjs.org)
 - [Create React App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
@@ -33,14 +33,21 @@ Você pode acessar o layout do projeto através [desse link](https://www.figma.c
 
 Este é o desafio final do processo seletivo para desenvolvedor Front-end no Compasso UOL.
 
+### 🙋‍♂️ Deployed da aplicação no Vercel através [deste link](https://keepalive-uol-git-master.emersongomes21.vercel.app/).
+
 ##    Páginas e Funcionalidades
 
 ### - Página Login
 ### - Página Home
 ### - Página de Erro 404 (Com base na do site https://compasso.com.br/)
-### -  Autenticação e redirecionamento das páginas privadas.
+### - Autenticação e redirecionamento das páginas privadas.
+### - Validações dos campos de formulário.
 
-## :fire: Como usar
+
+### Autenticações de rotas
+
+
+💻## :fire: Como usar
 
 - ### **Pré-requisitos**
 
@@ -66,11 +73,16 @@ Este é o desafio final do processo seletivo para desenvolvedor Front-end no Com
 
 ---
 
-## : Dados de login
+💻 ## : Dados de login
 
 ### Usúario (a): <i>juliana@</i>
 
 ### Senha :  <i>keepalive</i>
+
+
+ <h1> Agradecimentos e comentários. </h1>
+ 
+ <p> Meus sinceros agradecimentos a toda equipe da Compasso Uol, estou muito feliz em poder partilhar um pouca do meu amor pela tecnologia com vocês. Confesso que tive uma certa dificuldade por conta do pouco tempo que tive para desenvolver (não o período que estabeleceram), quando eu iniciei o desafio estava na metade uma disciplina do meu curso de ADS. Além disso, atualmente trabalho no setor de tecnologia da Secretária do estado do Pará, sendo assim me sobravam poucas horas. Mas, eu utilizei a madrugada para codificar o projeto, por falar nisso, estou acordado a 35 horas  sme dormir (hehe).É verdade, me empenhei bastante pois  desejo muito essa vaga e doei o máximo de mim, apesar das dificuldades (Que não foram poucas) :(  . Obrigado mais vez pela oportunidade! 😊  </p>
 
 Feito com ♥ by Emerson Gomes 
 
