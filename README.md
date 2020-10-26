@@ -17,7 +17,7 @@
 
 ## :rocket: Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+#### Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React e Hooks (useEffect, useState, Context)](https://reactjs.org)
 - [Create React App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
@@ -39,11 +39,6 @@ Este é o desafio final do processo seletivo para desenvolvedor Front-end no Com
 ### - Página Home
 ### - Página de Erro 404 (Com base na do site https://compasso.com.br/)
 ### -  Autenticação e redirecionamento das páginas privadas.
-
-
-### Autenticações de rotas
-
-
 
 ## :fire: Como usar
 
