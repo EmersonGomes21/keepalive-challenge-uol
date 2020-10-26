@@ -33,11 +33,14 @@ background-position: center;
 
 export const ContainerWarning = styled.div`
 display: flex;
+position: relative;
 flex-direction: column;
 text-align: left;
 width: 50%;
 height: 20%;
-margin-left: 5%;
+top: -80px;
+margin-left: 7%;
+
 
 
 > h1{

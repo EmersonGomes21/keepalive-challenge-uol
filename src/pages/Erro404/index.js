@@ -22,14 +22,14 @@ const Erro404 = () => {
 
   useEffect(() => {
 
-   {/**setTimeout(() => {
+  setTimeout(() => {
     isConnected ? history.push('/home')
     : 
     history.push('/login')
 
     }, (1000 * 10));
 
-    return () => clearTimeout(); */}
+    return () => clearTimeout(); 
 
   }, [])
   return (

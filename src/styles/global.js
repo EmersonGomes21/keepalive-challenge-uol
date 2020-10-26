@@ -109,8 +109,9 @@ export default createGlobalStyle`
 
   .heading-subtitle {
     font-size: 16px;
-    line-height: 40px;
-    font-weight: 20px;
+    font-weight: 80px;
+
+  
    
   }
 
