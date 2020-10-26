@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="GitHub-clone" src="https://github.com/EmersonGomes21/repositorios-readmes/blob/master/github-clone/github-clone-.gif" width="100%">
+  <img alt="Keepalive-Uol" src="https://github.com/EmersonGomes21/repositorios-readmes/blob/master/desafio%20keepalive/keepalive.gif" width="100%">
 </p>
 
 ## :rocket: Tecnologias
