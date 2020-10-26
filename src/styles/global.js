@@ -90,7 +90,7 @@ export default createGlobalStyle`
     justify-content: space-around ;
     margin: auto;
     margin-top: 100px;
-    background: gold;
+   
 
     @media screen and (max-width: 750px){
         
