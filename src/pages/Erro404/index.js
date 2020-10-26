@@ -9,11 +9,11 @@ import {
   IconsLeft,
   IconsRight
 } from './styles';
-import Header404 from '../../components/Header404';
-import Footer from '../../components/Footer';
-import icon1 from '../../assets/images/404/image-4-mobile.png';
-import icon2 from '../../assets/images/404/image-2-mobile.png';
-import icon3 from '../../assets/images/404/image-5-mobile.png'
+import Header404 from '~/components/Header404';
+import Footer from '~/components/Footer';
+import icon1 from '~/assets/images/404/image-4-mobile.png';
+import icon2 from '~/assets/images/404/image-2-mobile.png';
+import icon3 from '~/assets/images/404/image-5-mobile.png'
 
 const Erro404 = () => {
   let history = useHistory();
@@ -33,9 +33,9 @@ const Erro404 = () => {
   return (
     <>
 
-
+     <Header404 />
       <Container>
-        <Header404 />
+        
 
         <Content>
 

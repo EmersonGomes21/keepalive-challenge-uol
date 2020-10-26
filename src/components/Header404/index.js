@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoCompasso from '../../assets/images/404/LogoCompasso-branco.png';
+import LogoCompasso from '~/assets/images/404/LogoCompasso-branco.png';
 import { Container, ContainerRight } from './styles';
 
 function Header404() {
@@ -8,12 +8,12 @@ function Header404() {
       <img src={LogoCompasso} alt="logo" />
 
       <ContainerRight>
-        <a href ="#">Transformação</a>
-        <a href ="#">Plataformas</a>
-        <a href ="#">Culturas</a>
-        <a href ="#">Talentos</a>
-        <a href ="#">Vamos Conversar?</a>
-        <a href ="#">Português</a>
+        <a href ="#" className="link" >Transformação</a>
+        <a href ="#" className="link">Plataformas</a>
+        <a href ="#" className="link">Culturas</a>
+        <a href ="#" className="link">Talentos</a>
+        <a href ="#" className="link">Vamos Conversar?</a>
+        <a href ="#" className="link">Português</a>
       </ContainerRight>
 
     </Container>

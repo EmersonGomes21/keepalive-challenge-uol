@@ -6,19 +6,8 @@ function Footer() {
   let history = useHistory();
 
   const Logout = () =>{
-
-  try {
     localStorage.removeItem('@keepalive/connected');
-    
-   
- }
- catch{
-  alert('Erro ao tentar fazer logout, tente novamente!')
- }
-
- finally {
-  history.push('/login');
- }
+    history.push('/login');
 
   }
   return (

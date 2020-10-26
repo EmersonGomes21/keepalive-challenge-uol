@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-
 export const Container = styled.div`
-margin-top: -50px;
 display: flex;
-position: absolute;
+position: fixed;
+bottom:0;
 width: 100%;
 height: 100px;
 background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
@@ -61,7 +60,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 text-align: right;
-color: #FFFFFF;
+color: ${props => props.theme.colors.white};
 }
 `;
 
@@ -70,6 +69,7 @@ display:flex;
 flex-direction: column;
 align-items: center;
 margin-top: 9px;
+color: ${props => props.theme.colors.white};
 
 h1{
 width: 97px;
@@ -79,7 +79,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 48px;
 line-height: 61px;
-color: #FFFFFF;
+
 }
 
 h4{
@@ -92,7 +92,6 @@ font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 text-align: center;
-color: #FFFFFF;
 }
 
 `;
@@ -108,7 +107,7 @@ export const ButtonNavegation = styled.div`
 display: flex;
 width: 131px;
 height: 100px;
-background: #FFFFFF;
+background: ${props => props.theme.colors.white};
 justify-content: center;
 text-align: center;
 align-items: center;
@@ -137,6 +136,7 @@ margin-top: 22px;
 justify-content: center;
 text-align: center;
 align-items: center;
+color: ${props => props.theme.colors.white};
 
  a{
 
@@ -148,7 +148,6 @@ line-height: 15px;
 display: flex;
 align-items: center;
 text-align: center;
-color: #FFFFFF;
  }
 
 `;

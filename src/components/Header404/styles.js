@@ -34,11 +34,12 @@ font-size: 18px;
 line-height: 18px;
 margin-bottom: 17px;
 margin-left: 44px;
-cursor: pointer;
-}
-> a:hover{
+&:hover{
   cursor: pointer;
   
+}
+
+
 }
 
 `;
