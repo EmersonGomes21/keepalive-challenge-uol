@@ -19,7 +19,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [React](https://reactjs.org)
+- [React e Hooks (useEffect, useState, Context)](https://reactjs.org)
 - [Create React App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
 - [Styled Components](https://styled-components.com/)
 - [JavaScript, Css e html.](https://www.w3schools.com/)
@@ -33,17 +33,16 @@ Você pode acessar o layout do projeto através [desse link](https://www.figma.c
 
 Este é o desafio final do processo seletivo para desenvolvedor Front-end no Compasso UOL.
 
-##    Páginas
+##    Páginas e Funcionalidades
 
 ### - Página Login
 ### - Página Home
 ### - Página de Erro 404 (Com base na do site https://compasso.com.br/)
+### -  Autenticação e redirecionamento das páginas privadas.
 
-##   Funcionalidades
 
-**********
-&&&&&&&&&&&&&&&*
-*************
+### Autenticações de rotas
+
 
 
 ## :fire: Como usar
@@ -71,6 +70,12 @@ Este é o desafio final do processo seletivo para desenvolvedor Front-end no Com
 ```
 
 ---
+
+## : Dados de login
+
+### Usúario (a): <i>juliana@</i>
+
+### Senha :  <i>keepalive</i>
 
 Feito com ♥ by Emerson Gomes 
 

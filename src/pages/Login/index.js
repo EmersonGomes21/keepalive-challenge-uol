@@ -9,7 +9,7 @@ const Login = () => {
   const [users] = useState([
     { id: 1, user: 'email.usuario@compasso.com.br', password: 'keepalive' },
     { id: 2, user: 'emersongr7@gmail.com', password: 'emerson' },
-    { id: 3, user: 'juliana.nakagawa@compasso.com.br', password: 'juliana' },
+    { id: 3, user: 'juliana@', password: 'keepalive' },
     { id: 4, user: 'juliana@', password: '123' }
   ]);
 
