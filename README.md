@@ -33,7 +33,7 @@ Você pode acessar o layout do projeto através [desse link](https://www.figma.c
 
 Este é o desafio final do processo seletivo para desenvolvedor Front-end no Compasso UOL.
 
-### 🙋‍♂️ Deployed da aplicação no Vercel através [deste link](https://keepalive-uol-git-master.emersongomes21.vercel.app/).
+## 🙋‍♂️ Deployed da aplicação no Vercel através [deste link](https://keepalive-uol-git-master.emersongomes21.vercel.app/).
 
 ##    Páginas e Funcionalidades
 
