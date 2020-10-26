@@ -129,7 +129,7 @@ const Login = () => {
                 )
                   : ""}
 
-              <button onClick={submit} type="button" className="btn-primary">
+              <button onClick={submit} type="submit" className="btn-primary">
                 Continuar
               </button>
             </form>
