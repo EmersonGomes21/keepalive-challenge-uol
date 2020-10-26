@@ -28,7 +28,7 @@ export default createGlobalStyle`
 
   body, input, button {
     font: 14px 'Mark Pro', sans-serif;
-    font-size: 62%;
+   
   }
 
   a{
@@ -51,9 +51,20 @@ export default createGlobalStyle`
 
   .container {
     display: flex;
-    flex: 1;
+    width: 100%;
     height: 100%;
-    background: ${(props) => props.theme.colors.background}
+    background: ${(props) => props.theme.colors.background};
+    
+    @media screen and (max-width: 700px){
+    background: none; 
+     margin: auto;
+     width: 100%;
+     background-image: url(${backgroundLogin});
+    
+    
+ 
+}
+
   }
 
 
@@ -61,29 +72,44 @@ export default createGlobalStyle`
     display: flex;
     flex: 1;
     align-items: center;
-    justify-content: center;
+ 
+
+    @media screen and (max-width: 750px){
+      height: 100%;
+
+       justify-content: space-around;
+      }
+    
   }
 
   .content {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-around
-
+    margin: auto;
+    margin-top: 30px;
+  
   }
 
   .heading-title {
     font-weight: 400;
     font-size: 60px;
+   
   }
 
   .heading-subtitle {
     font-size: 16px;
     line-height: 20px;
+   
   }
 
   .form-container {
+    margin: auto;
     position: relative;
+    
+    height: 90%;
+
+    
 
     .title {
       font-size: 30px;
@@ -93,15 +119,22 @@ export default createGlobalStyle`
 
     .input-group {
       display: flex;
-      margin-top: 32px;
       align-items: center;
-
-      width: 379px;
+      justify-content: center;
+      margin: auto;
+      margin-top: 34px;
+      width: 400px;
       height: 60px;
       border-radius: 50px;
       background: transparent;
       border: 1px solid ${(props) => props.theme.colors.primary};
       padding: 20px;
+
+      @media screen and (max-width: 750px){
+        margin: auto;
+        margin-bottom: 32px;
+        margin-top: 32px;
+        }
 
       input {
         background: none;
@@ -109,6 +142,12 @@ export default createGlobalStyle`
         width: 100%;
         font-size: 16px;
         margin-right: 10px;
+
+        @media screen and (max-width: 750px){
+          margin:0;
+        }
+        
+      
       }
 
       img {
@@ -168,18 +207,67 @@ export default createGlobalStyle`
       font-weight: bold;
       background: ${(props) => props.theme.colors.button};
       box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+
+      @media screen and (max-width: 750px){
+        position: relative;
+        margin: auto;
+        top: 80px;
+        bottom: 0;
+
+      }
     }
   }
 
   .background-login {
     flex-direction: row;
     background-image: url(${backgroundLogin});
-
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    
     img {
       align-self: flex-start;
       padding: 35px;
+    
     }
   }
+
+
+
+
+
+  @media screen and (max-width: 700px){
+
+    html, body, #root {
+    height: 100%;
+  }
+    .container  {
+      margin: 0;
+ 
+}
+
+.container .col {
+    max-height: 80%;
+    margin: auto;
+ 
+}
+
+.container .col.content {
+    max-width:inherit ;
+ 
+}
+
+
+  .container .background-login {
+    display: none;
+ 
+}
+
+
+}
+
 `;
+
+
 
 
