@@ -86,7 +86,7 @@ Este é o desafio final do processo seletivo para desenvolvedor Front-end no Com
 
  <h1> Agradecimentos e comentários. </h1>
  
- <p> Meus sinceros agradecimentos a toda equipe da Compasso Uol, estou muito feliz em poder partilhar um pouca do meu amor pela tecnologia com vocês. Confesso que tive uma certa dificuldade por conta do pouco tempo que tive para desenvolver (não o período que estabeleceram), quando eu iniciei o desafio estava na metade uma disciplina do meu curso de ADS. Além disso, atualmente trabalho no setor de tecnologia da Secretária do estado do Pará, sendo assim me sobravam poucas horas. Mas, eu utilizei a madrugada para codificar o projeto, por falar nisso, estou a 35 horas  sem dormir (hehe).É verdade, me empenhei bastante pois  desejo muito essa vaga e doei o máximo de mim, apesar das dificuldades (Que não foram poucas) :(  . Obrigado mais vez pela oportunidade! 😊  </p>
+ <p> Meus sinceros agradecimentos a toda equipe da Compasso Uol, estou muito feliz em poder partilhar um pouca do meu amor pela tecnologia com vocês. Confesso que tive uma certa dificuldade por conta do pouco tempo que tive para desenvolver (não o período que estabeleceram), quando eu iniciei o desafio estava na metade uma disciplina do meu curso de ADS. Além disso, atualmente trabalho no setor de tecnologia da Secretária do estado do Pará, sendo assim me sobravam poucas horas. Mas, eu utilizei a madrugada para codificar o projeto, por falar nisso, estou a 35 horas  sem dormir (hehe).É verdade, me empenhei bastante pois  desejo muito essa vaga e doei o máximo de mim, apesar das dificuldades (Que não foram poucas) :(  . Obrigado mais uma vez pela oportunidade! 😊  </p>
 
 Feito com ♥ by Emerson Gomes 
 
