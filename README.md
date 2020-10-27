@@ -40,14 +40,16 @@ Este é o desafio final do processo seletivo para desenvolvedor Front-end no Com
 ### - Página Login
 ### - Página Home
 ### - Página de Erro 404 (Com base na do site https://compasso.com.br/)
+### - Na Página de erro 404, após 10 segundos você é redirecionado para de home, caso esteja logado. Caso contrário irá para página de login.
 ### - Autenticação e redirecionamento das páginas privadas.
-### - Validações dos campos de formulário.
+### - Validações dos campos de formulário
+
+### Obs: 
+#### Para ter acesso a página de erro 404, é necessário não está logado.
+#### 
 
 
-### Autenticações de rotas
-
-
-💻## :fire: Como usar
+ ## 💻 :fire: Como usar
 
 - ### **Pré-requisitos**
 
@@ -85,5 +87,4 @@ Este é o desafio final do processo seletivo para desenvolvedor Front-end no Com
  <p> Meus sinceros agradecimentos a toda equipe da Compasso Uol, estou muito feliz em poder partilhar um pouca do meu amor pela tecnologia com vocês. Confesso que tive uma certa dificuldade por conta do pouco tempo que tive para desenvolver (não o período que estabeleceram), quando eu iniciei o desafio estava na metade uma disciplina do meu curso de ADS. Além disso, atualmente trabalho no setor de tecnologia da Secretária do estado do Pará, sendo assim me sobravam poucas horas. Mas, eu utilizei a madrugada para codificar o projeto, por falar nisso, estou acordado a 35 horas  sme dormir (hehe).É verdade, me empenhei bastante pois  desejo muito essa vaga e doei o máximo de mim, apesar das dificuldades (Que não foram poucas) :(  . Obrigado mais vez pela oportunidade! 😊  </p>
 
 Feito com ♥ by Emerson Gomes 
-
 
