@@ -79,9 +79,9 @@ Este é o desafio final do processo seletivo para desenvolvedor Front-end no Com
 
  ## 💻 Dados de login :
 
-### Usúario (a): <i>juliana@</i>
+###  Usúario(a):    <i>juliana@</i>
 
-### Senha :  <i>keepalive</i>
+###  Senha:      <i>keepalive</i>
 
 
  <h1> Agradecimentos e comentários. </h1>
