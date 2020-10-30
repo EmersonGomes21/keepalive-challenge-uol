@@ -9,7 +9,7 @@
 
 </p>
 
-## DESAFIO APROVADO!!!
+## DESAFIO APROVADO!!  :)
 <br>
 
 <p align="center">
