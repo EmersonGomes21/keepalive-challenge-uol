@@ -32,7 +32,7 @@ Você pode acessar o layout do projeto através [desse link](https://www.figma.c
 
 ## 💻 Projeto
 
-Este é o desafio final do processo seletivo para desenvolvedor Front-end no Compasso UOL.
+Este é o desafio final do processo seletivo para desenvolvedor Front-end no Compasso UOL, versão desktop (não responsiva).
 
 ## 🙋‍♂️ Deployed da aplicação no Vercel através [deste link](https://keepalive-uol-git-master.emersongomes21.vercel.app/).
 
